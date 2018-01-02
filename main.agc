@@ -12,8 +12,13 @@ SetWindowAllowResize( 1 ) // allow the user to resize the window
 
 // set display properties
 SetVirtualResolution( 1024, 768 ) // doesn't have to match the window
+
+LoadImage(2,"background.png")
+CreateSprite(2,2)
+
 LoadImage(1,"smile.png")
 CreateSprite(1,1)
+
 SetJoystickScreenPosition(1,0,0)
 sx=128
 sy=128
