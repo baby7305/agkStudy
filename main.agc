@@ -14,9 +14,14 @@ SetWindowAllowResize( 1 ) // allow the user to resize the window
 SetVirtualResolution( 1024, 768 ) // doesn't have to match the window
 LoadImage(1,"smile.png")
 CreateSprite(1,1)
-
+SetJoystickScreenPosition(1,0,0)
+sx=128
+sy=128
 
 
 do
+	SetSpritePosition(1,sx,sy)
+	sx=sx+GetJoystickX()
+	sy=sy+GetJoystickY()
     Sync()
 loop
