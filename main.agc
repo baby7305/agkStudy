@@ -19,14 +19,17 @@ CreateSprite(2,2)
 LoadImage(1,"smile.png")
 CreateSprite(1,1)
 
-SetJoystickScreenPosition(1,0,0)
-sx=128
-sy=128
-
+//create ten smile sprites
+for i=1 to 10
+	CreateSprite(2+i,1)
+	SetSpritePosition(2+i,Random(100,900),Random(100,668))
+	Sleep(1000)
+	sync()
+next i
 
 do
-	SetSpritePosition(1,sx,sy)
-	sx=sx+GetJoystickX()*8
-	sy=sy+GetJoystickY()*8
-    Sync()
+	sync()
 loop
+
+
+
