@@ -31,10 +31,10 @@ for i=1 to 10
 	CreateSprite(2+i,1)
 	SetSpritePosition(2+i,Random(100,900),Random(100,668))
 	
-	SetSpriteColorAlpha(2+i,Random(10,255))
-//	SetSpriteColorRed(2+i,Random(150,255))
-//	SetSpriteColorGreen(2+i,0)
-//	SetSpriteColorBlue(2+i,0)
+//	SetSpriteColorAlpha(2+i,Random(10,255))
+	SetSpriteColorRed(2+i,Random(150,255))
+	SetSpriteColorGreen(2+i,0)
+	SetSpriteColorBlue(2+i,0)
 	Sleep(1000)
 	sync()
 next i
