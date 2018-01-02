@@ -21,7 +21,7 @@ sy=128
 
 do
 	SetSpritePosition(1,sx,sy)
-	sx=sx+GetJoystickX()
-	sy=sy+GetJoystickY()
+	sx=sx+GetJoystickX()*8
+	sy=sy+GetJoystickY()*8
     Sync()
 loop
